@@ -26,3 +26,7 @@ This page is a hub for all of my minecraft mods, feel free to report bugs, ask q
 - **Download:** https://modrinth.com/mod/autoxp  
 
 ---
+
+## Reporting Bugs, Suggesting Features, or Asking Questions
+
+- Please use this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSc7YCsOoDYVmrE59apNR__nxUaWLEcN__QkdWmqeH34T3-38A/viewform) to report your feedback for any of these mods.
