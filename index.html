@@ -6,14 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     :root {
-      --bg: #f3f4f6;
-      --content-bg: #ffffff;
-      --border: #d1d5db;
-      --text-main: #111827;
-      --text-muted: #6b7280;
+      --bg: #020617;
+      --content-bg: #020617;
+      --border: #1f2937;
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
       --accent: #22c55e;
-      --accent-soft: #dcfce7;
-      --accent-border: #16a34a;
+      --link: #38bdf8;
     }
 
     * { box-sizing: border-box; }
@@ -33,9 +32,9 @@
 
     .content {
       background: var(--content-bg);
-      border-radius: 8px;
+      border-radius: 6px;
       border: 1px solid var(--border);
-      padding: 24px 20px 20px;
+      padding: 20px 18px 18px;
     }
 
     h1 {
@@ -44,38 +43,56 @@
       font-weight: 600;
     }
 
+    h2 {
+      margin: 20px 0 4px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 3px;
+    }
+
+    p {
+      margin: 0 0 10px;
+      line-height: 1.5;
+      color: var(--text-main);
+    }
+
     .subtitle {
-      margin: 0 0 16px;
+      margin-bottom: 16px;
       color: var(--text-muted);
-      font-size: 0.96rem;
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
     .nav-row {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
     }
 
     .nav-row a {
-      text-decoration: none;
       font-size: 0.85rem;
-      padding: 4px 10px;
+      padding: 3px 8px;
       border-radius: 999px;
       border: 1px solid var(--border);
       color: var(--text-muted);
-      background: #f9fafb;
+      text-decoration: none;
     }
 
-    h2 {
-      margin: 20px 0 6px;
-      font-size: 1.1rem;
-      font-weight: 600;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 4px;
+    .nav-row a:hover {
+      border-color: var(--text-muted);
     }
 
-    .mod-meta {
+    .meta {
       font-size: 0.78rem;
       color: var(--text-muted);
       text-transform: uppercase;
@@ -83,182 +100,92 @@
       margin-bottom: 4px;
     }
 
-    .mod-desc {
-      margin: 0 0 10px;
-      color: var(--text-muted);
-      font-size: 0.92rem;
+    ul {
+      margin: 0 0 12px 18px;
+      padding: 0;
     }
 
-    .link-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 10px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 10px;
-      font-size: 0.82rem;
-      border-radius: 4px;
-      border: 1px solid var(--border);
-      background: #f9fafb;
-      color: var(--text-main);
-      text-decoration: none;
-    }
-
-    .btn.primary {
-      border-color: var(--accent-border);
-      background: var(--accent-soft);
-      color: var(--accent);
-    }
-
-    .btn span.icon {
-      font-size: 0.95rem;
-      line-height: 1;
-    }
-
-    .section-note {
-      margin: 0 0 12px;
-      font-size: 0.85rem;
-      color: var(--text-muted);
+    li {
+      margin-bottom: 4px;
     }
 
     footer {
       margin-top: 16px;
       font-size: 0.8rem;
       color: var(--text-muted);
-    }
-
-    @media (max-width: 640px) {
-      .content {
-        padding: 20px 16px 16px;
-      }
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
     }
   </style>
 </head>
 <body>
   <div class="page">
     <div class="content">
-      <header>
-        <h1>Floonk's Minecraft Mods</h1>
-        <p class="subtitle">
-          Central hub for Floonk's mods: download links, bug reports, and feature suggestions.
-        </p>
+      <h1>Floonk's Minecraft Mods</h1>
+      <p class="subtitle">
+        Central hub for Floonk's mods: download links, bug reports, and feature suggestions.
+      </p>
 
-        <div class="nav-row">
-          <a href="#auto-tasking">Auto Tasking</a>
-          <a href="#auto-trash">Auto Trash</a>
-          <a href="#autoxp">AutoXP</a>
-        </div>
-      </header>
+      <div class="nav-row">
+        <a href="#auto-tasking">Auto Tasking</a>
+        <a href="#auto-trash">Auto Trash</a>
+        <a href="#autoxp">AutoXP</a>
+      </div>
 
-      <!-- Auto Tasking -->
-      <section id="auto-tasking">
-        <h2>Auto Tasking</h2>
-        <p class="mod-meta">Fabric · Survival utility</p>
-        <p class="mod-desc">
-          Automates repetitive tasks like mining, stripping, tilling, and paving while you walk and swing your tools.
-        </p>
+      <h2 id="auto-tasking">Auto Tasking</h2>
+      <p class="meta">Fabric · Survival utility</p>
+      <p>
+        Automates repetitive tasks like mining, stripping, tilling, and paving while you walk and swing your tools.
+      </p>
 
-        <p class="section-note">Downloads</p>
-        <div class="link-row">
-          <a class="btn primary" href="https://modrinth.com/mod/auto-tasking" target="_blank" rel="noopener">
-            <span class="icon">⬇</span>
-            <span>Download on Modrinth</span>
-          </a>
-          <a class="btn" href="https://github.com/Tobber56/Auto-Tasking" target="_blank" rel="noopener">
-            <span class="icon">🧪</span>
-            <span>Source & changelog</span>
-          </a>
-        </div>
+      <p><strong>Downloads</strong></p>
+      <ul>
+        <li><a href="https://modrinth.com/mod/auto-tasking" target="_blank" rel="noopener">Download on Modrinth</a></li>
+        <li><a href="https://github.com/Tobber56/Auto-Tasking" target="_blank" rel="noopener">Source &amp; changelog</a></li>
+      </ul>
 
-        <p class="section-note">Issues & feedback</p>
-        <div class="link-row">
-          <a class="btn" href="https://github.com/Tobber56/Auto-Tasking/issues/new?template=bug-report.yml" target="_blank" rel="noopener">
-            <span class="icon">🐛</span>
-            <span>Report a bug</span>
-          </a>
-          <a class="btn" href="https://github.com/Tobber56/Auto-Tasking/issues/new?template=mod-suggestion.yml" target="_blank" rel="noopener">
-            <span class="icon">💡</span>
-            <span>Suggest a feature</span>
-          </a>
-          <a class="btn" href="https://github.com/Tobber56/Auto-Tasking/issues/new?template=question.yml" target="_blank" rel="noopener">
-            <span class="icon">❓</span>
-            <span>Ask a question</span>
-          </a>
-        </div>
-      </section>
+      <p><strong>Issues &amp; feedback</strong></p>
+      <ul>
+        <li><a href="https://github.com/Tobber56/Auto-Tasking/issues/new?template=bug-report.yml" target="_blank" rel="noopener">Report a bug</a></li>
+        <li><a href="https://github.com/Tobber56/Auto-Tasking/issues/new?template=mod-suggestion.yml" target="_blank" rel="noopener">Suggest a feature</a></li>
+        <li><a href="https://github.com/Tobber56/Auto-Tasking/issues/new?template=question.yml" target="_blank" rel="noopener">Ask a question</a></li>
+      </ul>
 
-      <!-- Auto Trash -->
-      <section id="auto-trash">
-        <h2>Auto Trash</h2>
-        <p class="mod-meta">Fabric · Inventory cleanup</p>
-        <p class="mod-desc">
-          Automatically deletes junk items from your inventory using configurable filters so you can keep the good stuff.
-        </p>
+      <h2 id="auto-trash">Auto Trash</h2>
+      <p class="meta">Fabric · Inventory cleanup</p>
+      <p>
+        Automatically deletes junk items from your inventory using configurable filters so you can keep the good stuff.
+      </p>
 
-        <p class="section-note">Downloads</p>
-        <div class="link-row">
-          <a class="btn primary" href="https://modrinth.com/mod/auto-trash" target="_blank" rel="noopener">
-            <span class="icon">⬇</span>
-            <span>Download on Modrinth</span>
-          </a>
-        </div>
+      <p><strong>Downloads</strong></p>
+      <ul>
+        <li><a href="https://modrinth.com/mod/auto-trash" target="_blank" rel="noopener">Download on Modrinth</a></li>
+      </ul>
 
-        <p class="section-note">Issues & feedback</p>
-        <div class="link-row">
-          <!-- Replace these with real issue URLs once Auto Trash has its own repo/templates -->
-          <a class="btn" href="#" target="_blank" rel="noopener">
-            <span class="icon">🐛</span>
-            <span>Report a bug</span>
-          </a>
-          <a class="btn" href="#" target="_blank" rel="noopener">
-            <span class="icon">💡</span>
-            <span>Suggest a feature</span>
-          </a>
-          <a class="btn" href="#" target="_blank" rel="noopener">
-            <span class="icon">❓</span>
-            <span>Ask a question</span>
-          </a>
-        </div>
-      </section>
+      <p><strong>Issues &amp; feedback</strong></p>
+      <ul>
+        <li><a href="#" target="_blank" rel="noopener">Report a bug</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Suggest a feature</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Ask a question</a></li>
+      </ul>
 
-      <!-- AutoXP -->
-      <section id="autoxp">
-        <h2>AutoXP</h2>
-        <p class="mod-meta">Fabric · Experience management</p>
-        <p class="mod-desc">
-          Helps manage your XP automatically, keeping your levels where you want them without constant micromanagement.
-        </p>
+      <h2 id="autoxp">AutoXP</h2>
+      <p class="meta">Fabric · Experience management</p>
+      <p>
+        Helps manage your XP automatically, keeping your levels where you want them without constant micromanagement.
+      </p>
 
-        <p class="section-note">Downloads</p>
-        <div class="link-row">
-          <a class="btn primary" href="https://modrinth.com/mod/autoxp" target="_blank" rel="noopener">
-            <span class="icon">⬇</span>
-            <span>Download on Modrinth</span>
-          </a>
-        </div>
+      <p><strong>Downloads</strong></p>
+      <ul>
+        <li><a href="https://modrinth.com/mod/autoxp" target="_blank" rel="noopener">Download on Modrinth</a></li>
+      </ul>
 
-        <p class="section-note">Issues & feedback</p>
-        <div class="link-row">
-          <!-- Replace these with real issue URLs once AutoXP has its own repo/templates -->
-          <a class="btn" href="#" target="_blank" rel="noopener">
-            <span class="icon">🐛</span>
-            <span>Report a bug</span>
-          </a>
-          <a class="btn" href="#" target="_blank" rel="noopener">
-            <span class="icon">💡</span>
-            <span>Suggest a feature</span>
-          </a>
-          <a class="btn" href="#" target="_blank" rel="noopener">
-            <span class="icon">❓</span>
-            <span>Ask a question</span>
-          </a>
-        </div>
-      </section>
+      <p><strong>Issues &amp; feedback</strong></p>
+      <ul>
+        <li><a href="#" target="_blank" rel="noopener">Report a bug</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Suggest a feature</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Ask a question</a></li>
+      </ul>
 
       <footer>
         All feedback is handled through GitHub issues. Please include your Minecraft, mod, and loader versions when reporting bugs.
