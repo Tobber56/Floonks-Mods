@@ -27,6 +27,14 @@ This page is a hub for all of my minecraft mods, feel free to report bugs, ask q
 
 ---
 
+## Chunk Tracker
+
+**Chunk Tracker** is a client-side Fabric mod for Minecraft 1.21.1 that logs blocks in loaded chunks and lets you search, review, and get alerts for watched blocks. 
+
+- **Download:** https://modrinth.com/mod/chunktracker
+
+---
+
 ## Reporting Bugs, Suggesting Features, or Asking Questions
 
 - Please use this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSc7YCsOoDYVmrE59apNR__nxUaWLEcN__QkdWmqeH34T3-38A/viewform) to report your feedback for any of these mods.
