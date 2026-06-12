@@ -7,7 +7,7 @@ This page is a hub for all of my minecraft mods, feel free to report bugs, ask q
 
 **Auto Tasking** is a client-side Fabric mod for Minecraft 1.21.1 that lets you select an area and automatically perform repetitive tasks as you walk around — mining, tilling, planting, stripping logs, placing blocks, and paving surfaces.
 
-- **Download:** https://modrinth.com/mod/auto-tasking
+- **Download:** for now download the mod from [this page](https://github.com/Tobber56/Auto-Tasking) since it cant be accessed on Modrinth currently
   
 ---
 
