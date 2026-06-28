@@ -3,7 +3,7 @@
 This page is a hub for all of my minecraft mods, feel free to report bugs, ask questions, and give suggestions!
 ---
 
-## Auto Tasking (Under Review)
+## Auto Tasking (Rejected)
 
 **Auto Tasking** is a client-side Fabric mod for Minecraft 1.21.1 that lets you select an area and automatically perform repetitive tasks as you walk around — mining, tilling, planting, stripping logs, placing blocks, and paving surfaces.
 
@@ -27,11 +27,11 @@ This page is a hub for all of my minecraft mods, feel free to report bugs, ask q
 
 ---
 
-## Chunk Tracker (Under Review)
+## Chunk Tracker
 
 **Chunk Tracker** is a client-side Fabric mod for Minecraft 1.21.1 that logs blocks in loaded chunks and lets you search, review, and get alerts for watched blocks. 
 
-- **Download:** for now download the mod from [this page](https://github.com/Tobber56/Chunk-Tracker) since it cant be accessed on Modrinth currently
+- **Download:** https://modrinth.com/mod/chunktracker
 
 ---
 
